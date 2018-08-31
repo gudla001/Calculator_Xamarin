@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Pall_Gudlaugsson" x:Class="Pall_Gudlaugsson.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Hello Word" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Navy" />
+    <Label Text="CS 481" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Black" />
+        <Button 
+            x:Name="LabelChangeingButton"
+            Text="Click me"
+             
+            />
+        <TimePicker
+        HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Red"
+        />
+       
+    </StackLayout>
+</ContentPage>
