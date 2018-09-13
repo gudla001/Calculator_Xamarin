@@ -1,17 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Pall_Gudlaugsson" x:Class="Pall_Gudlaugsson.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Hello Word" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Navy" />
-    <Label Text="CS 481" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Black" />
-        <Button 
-            x:Name="LabelChangeingButton"
-            Text="Click me"
-             
-            />
-        <TimePicker
-        HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Red"
-        />
-       
-    </StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Pall_Gudlaugsson"
+             x:Class="Pall_Gudlaugsson.MainPage">
+   
+        
+    
+    
+    
+    
+<Grid Padding="20" VerticalOptions="CenterAndExpand">
+      <Grid.RowDefinitions>
+         <RowDefinition Height="40" />
+         <RowDefinition Height="40" />
+         <RowDefinition Height="40" />
+         <RowDefinition Height="40" />
+            
+            
+       </Grid.RowDefinitions>
+        
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="2*" />
+        <ColumnDefinition Width="2*" />
+            
+      </Grid.ColumnDefinitions>
+            
+            
+            
+   
+
+     <Label x:Name="Total" Grid.Row="0" Text="0" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="4" />
+        
+        
+      <Button Clicked="Handle_Clicked_1" BackgroundColor="Orange" Grid.Row="1" Text="+" Grid.Column="4" Grid.ColumnSpan="5" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      <Button Clicked="PressedNum" Grid.Row="1" Text="7" Grid.Column="0" Grid.ColumnSpan="1" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      <Button Clicked="PressedNum" Grid.Row="1" Text="8" Grid.Column="1" Grid.ColumnSpan="1" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      <Button Clicked="PressedNum" Grid.Row="1" Text="9" Grid.Column="2" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+
+      <Button Clicked="Handle_Clicked_1" BackgroundColor="Orange" Grid.Row="2" Text="-" Grid.Column="4" Grid.ColumnSpan="5" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+     <Button Clicked="PressedNum" Grid.Row="2" Text="4" Grid.Column="0" Grid.ColumnSpan="1" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      <Button Clicked="PressedNum" Grid.Row="2" Text="5" Grid.Column="1" Grid.ColumnSpan="1" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      <Button Clicked="PressedNum" Grid.Row="2" Text="6" Grid.Column="2" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+
+        <Button Clicked="Handle_Clicked_1" BackgroundColor="Orange" Grid.Row="3" Text="X" Grid.Column="4" Grid.ColumnSpan="5" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      <Button Clicked="PressedNum" Grid.Row="3" Text="1" Grid.Column="0" Grid.ColumnSpan="1" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      <Button Clicked="PressedNum" Grid.Row="3" Text="2" Grid.Column="1" Grid.ColumnSpan="1" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      <Button Clicked="PressedNum" Grid.Row="3" Text="3" Grid.Column="2" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+
+        <Button Clicked="Handle_Clicked_1" BackgroundColor="Orange" Grid.Row="4" Text="/" Grid.Column="4" Grid.ColumnSpan="5" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+     <Button  Clicked="PressedNum" Grid.Row="4" Text="0" Grid.Column="0" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+        <Button BackgroundColor="Black" TextColor="White" Grid.Row="5" Text="=" Grid.Column="1" Grid.ColumnSpan="8" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      <Button Clicked="Handle_Clicked" BackgroundColor="Black" TextColor="White" Grid.Row="5" Text="C" Grid.Column="0" Grid.ColumnSpan="1" HorizontalOptions="FillAndExpand" BorderWidth="2"/>
+      
+    </Grid>
+      
 </ContentPage>
